@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of tokenly-vault.
+ * This file is part of sanchescom-vault.
  *
  * (c) Aleksandr Efimov <sanches.com@mail.ru>
  *
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tokenly\Vault\Providers;
+namespace Sanchescom\Vault\Providers;
 
 /**
  * Class LaravelServiceProvider.

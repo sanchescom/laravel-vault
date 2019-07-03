@@ -9,7 +9,7 @@ This is a wrapper around [jippi/vault-php-sdk](https://github.com/jippi/vault-ph
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ``` bash
-$ composer require tokenly/laravel-vault
+$ composer require sanchescom/laravel-vault
 ```
 
 ### Laravel 5.x:
@@ -19,7 +19,7 @@ After updating composer, add the ServiceProvider to the providers array in `conf
  ```php
 'providers' => [
     ...
-    Tokenly\Vault\Providers\LaravelServiceProvider::class,
+    Sanchescom\Vault\Providers\LaravelServiceProvider::class,
 ],
 ```
 
@@ -28,7 +28,7 @@ After updating composer, add the ServiceProvider to the providers array in `conf
 After updating composer add the following lines to register provider in `bootstrap/app.php`
 
 ```php
-$app->register(Tokenly\Vault\Providers\LumenServiceProvider::class);
+$app->register(Sanchescom\Vault\Providers\LumenServiceProvider::class);
 ```
 
 ### Set the environment variables
@@ -45,7 +45,7 @@ VAULT_CERTIFICATE=/path/to/ca.cert
 
 namespace App\Http\Controllers;
 
-use Tokenly\Vault\Facades\Vault;
+use Sanchescom\Vault\Facades\Vault;
 
 class ExampleController extends Controller
 {

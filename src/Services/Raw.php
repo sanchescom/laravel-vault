@@ -1,6 +1,6 @@
 <?php
 
-namespace Tokenly\Vault\Services;
+namespace Sanchescom\Vault\Services;
 
 use Error;
 use Illuminate\Http\Response;

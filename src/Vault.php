@@ -1,6 +1,6 @@
 <?php
 
-namespace Tokenly\Vault;
+namespace Sanchescom\Vault;
 
 /**
  * Class Vault.
@@ -8,7 +8,7 @@ namespace Tokenly\Vault;
  * @method \Jippi\Vault\Services\Sys sys()
  * @method \Jippi\Vault\Services\Data data()
  * @method \Jippi\Vault\Services\Auth\Token authToken()
- * @method \Tokenly\Vault\Services\Raw raw()
+ * @method \Sanchescom\Vault\Services\Raw raw()
  */
 class Vault
 {
@@ -35,7 +35,7 @@ class Vault
     /**
      * @param string $token
      *
-     * @return \Tokenly\Vault\Vault
+     * @return \Sanchescom\Vault\Vault
      */
     public function setToken($token)
     {
@@ -55,7 +55,7 @@ class Vault
      * @param string $method
      * @param array $args
      *
-     * @return \Tokenly\Vault\Wrapper
+     * @return \Sanchescom\Vault\Wrapper
      */
     public function __call($method, $args)
     {
@@ -73,7 +73,7 @@ class Vault
     }
 
     /**
-     * @return \Tokenly\Vault\ServiceFactory
+     * @return \Sanchescom\Vault\ServiceFactory
      */
     protected function getFactory()
     {

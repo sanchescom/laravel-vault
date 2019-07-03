@@ -1,6 +1,6 @@
 <?php
 
-namespace Tokenly\Vault;
+namespace Sanchescom\Vault;
 
 use Jippi\Vault\ServiceFactory as BaseServiceFactory;
 
@@ -17,7 +17,7 @@ class ServiceFactory extends BaseServiceFactory
         'data' => 'Jippi\Vault\Services\Data',
         'auth/token' => 'Jippi\Vault\Services\Auth\Token',
         'auth/approle'=>'Jippi\Vault\Services\Auth\AppRole',
-        'raw' => 'Tokenly\Vault\Services\Raw',
+        'raw' => 'Sanchescom\Vault\Services\Raw',
     ];
 
     /**

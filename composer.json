@@ -1,17 +1,22 @@
 {
-    "name": "tokenly/laravel-vault",
+    "name": "sanchescom/laravel-vault",
     "type": "library",
     "description": "A Laravel interface for Hashicorp Vault",
     "keywords": [
-        "laravel", "Vault"
+        "laravel",
+        "Vault"
     ],
-    "homepage": "https://github.com/tokenly/laravel-vault",
+    "homepage": "https://github.com/sanchescom/laravel-vault",
     "license": "MIT",
     "authors": [
         {
             "name": "Devon Weller",
             "email": "devon@tokenly.com",
             "homepage": "https://tokenly.com"
+        },
+        {
+            "name": "Aleksandr Efimov",
+            "email": "sanches.com@mail.ru",
         }
     ],
     "require": {
@@ -27,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Tokenly\\Vault\\": "src"
+            "Sanchescom\\Vault\\": "src"
         }
     },
     "scripts": {
@@ -41,12 +46,12 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Tokenly\\Vault\\Providers\\LaravelServiceProvider"
+                "Sanchescom\\Vault\\Providers\\LaravelServiceProvider"
             ]
         },
         "lumen": {
             "providers": [
-                "Tokenly\\Vault\\Providers\\LumenServiceProvider"
+                "Sanchescom\\Vault\\Providers\\LumenServiceProvider"
             ]
         }
     }

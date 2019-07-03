@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of tokenly-vault.
+ * This file is part of sanchescom-vault.
  *
  * (c) Aleksandr Efimov <sanches.com@mail.ru>
  *
@@ -9,18 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace Tokenly\Vault\Facades;
+namespace Sanchescom\Vault\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class Vault.
  *
- * @method static \Tokenly\Vault\Vault setToken(string $token)
+ * @method static \Sanchescom\Vault\Vault setToken(string $token)
  * @method static \Jippi\Vault\Services\Sys sys()
  * @method static \Jippi\Vault\Services\Data data()
  * @method static \Jippi\Vault\Services\Auth\Token authToken()
- * @method static \Tokenly\Vault\Services\Raw raw()
+ * @method static \Sanchescom\Vault\Services\Raw raw()
  */
 class Vault extends Facade
 {
@@ -31,6 +31,6 @@ class Vault extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'tokenly.vault';
+        return 'Sanchescom.vault';
     }
 }

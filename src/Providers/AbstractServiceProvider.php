@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of tokenly-vault.
+ * This file is part of sanchescom-vault.
  *
  * (c) Aleksandr Efimov <sanches.com@mail.ru>
  *
@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Tokenly\Vault\Providers;
+namespace Sanchescom\Vault\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Tokenly\Vault\Vault;
+use Sanchescom\Vault\Vault;
 
 /**
  * Class AbstractServiceProvider.
@@ -44,7 +44,7 @@ abstract class AbstractServiceProvider extends ServiceProvider
      */
     protected function registerAliases()
     {
-        $this->app->alias('tokenly.vault', Vault::class);
+        $this->app->alias('sanchescom.vault', Vault::class);
     }
 
     /**
@@ -54,7 +54,7 @@ abstract class AbstractServiceProvider extends ServiceProvider
      */
     protected function registerVault()
     {
-        $this->app->singleton('tokenly.vault', function ($app) {
+        $this->app->singleton('sanchescom.vault', function ($app) {
             return new Vault(
                 $this->config('address'),
                 $this->config('certificate')

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tokenly\Vault;
+namespace Sanchescom\Vault;
 
 use Error;
 use Exception;
@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Log;
  */
 class Wrapper
 {
-    /** @var \Tokenly\Vault\ServiceFactory */
+    /** @var \Sanchescom\Vault\ServiceFactory */
     protected $serviceDelegate;
 
     /** @var \GuzzleHttp\Psr7\Response|array */
@@ -33,7 +33,7 @@ class Wrapper
     /**
      * Wrapper constructor.
      *
-     * @param \Tokenly\Vault\ServiceFactory $serviceDelegate
+     * @param \Sanchescom\Vault\ServiceFactory $serviceDelegate
      */
     public function __construct($serviceDelegate)
     {
