@@ -31,6 +31,6 @@ class Vault extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Sanchescom.vault';
+        return 'sanchescom.vault';
     }
 }
