@@ -130,9 +130,8 @@ class Wrapper
             $data['data'] = $this->data;
         } else {
             $data['errors'] = $this->errors;
+            $this->logErrors();
         }
-
-        $this->logErrors();
 
         return new JsonResponse($data, $this->code);
     }
